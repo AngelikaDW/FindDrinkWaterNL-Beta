@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name" translatable="false">Find Drink Water (NL)</string>
+    <string name="header_info">Free Tap Water</string>
+    <string name="text_intro">Find the next tap water point. Fill your bottle and quench your thirst.</string>
+    <string name="button_info" translatable="false">Info</string>
+    <string name="header_quality">Safe, clean and sweet tasting tap water</string>
+    <string name="text_qualtiy">The Netherlands and Amsterdam have got the safest and cleanest tap water in Europe. It actually tastes sweet as no chlorine is used to clean it. The quality of Dutch drinking water was top rated by a comparative research published in Science Magazine 2016/02 Vol. 351! </string>
+    <string name="header_bottles">Quit buying bottled water</string>
+    <string name="text_bottles">Drinking water to stay hydrated is cool, buying bottled water is lame. The effects of bottled water are devastating. Bring a re-usable bottle and enjoy best quality tap water, always cooled and refreshing!</string>
+    <string name="header_colofon" translatable="false">Colofon</string>
+    <string name="text_development" translatable="false">Design and Development: aleaf.nl</string>
+    <string name="text_version" translatable="false">Version: 1.0</string>
+    <string name="text_icons" translatable="false">Icons by: freepik.com</string>
+    <string name="text_watertaps" translatable="false">Water fountains: Waternet, Dunea, Join the Pipe, PWN</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Find Drink Water (NL)</string>
+    <string name="header_bottles">Kaufen Sie kein Wasser in Plastikflaschen</string>
+    <string name="header_info">Gratis Wasser</string>
+    <string name="header_quality">Geprüftes, sauberes Trinkwasser</string>
+    <string name="text_bottles">Wasser trinken ist cool, Wasser in Plastikflaschen kaufen ist lahm. Die Auswirkungen von Plastikflaschen sind verheerend. Bringen Sie eine wiederverwendbare Flasche und genießen Sie Leitungswasser von der höchsten Qualität, immer gekühlt und erfrischend!</string>
+    <string name="text_intro">Finden Sie den nächsten Trinkwasserbrunnen. Füllen Sie Ihre Flasche und stillen Sie Ihren Durst.</string>
+    <string name="text_qualtiy">Die Niederlande und Amsterdam haben das beste und sauberste Leitungswasser in Europa. Weil kein Chlor bei der FIlterung verwendet wird, schmeckt es herrlich. Die Qualität des niederländischen Trinkwasser wurde in einer internationalen Vergleichsstudie an erster Stelle gereiht (Science Magazine 2016/02 Vol. 351)!\n</string>
+</resources>
