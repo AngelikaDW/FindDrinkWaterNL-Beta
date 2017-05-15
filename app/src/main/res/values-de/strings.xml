@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Find Drink Water (NL)</string>
     <string name="header_bottles">Kaufen Sie kein Wasser in Plastikflaschen</string>
     <string name="header_info">Gratis Wasser</string>
     <string name="header_quality">Geprüftes, sauberes Trinkwasser</string>
