@@ -124,13 +124,7 @@ public class MainActivity extends AppCompatActivity implements
                 != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(
                 this,android.Manifest.permission.ACCESS_COARSE_LOCATION)
                 != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
+
             return;
         }
         LocationServices.FusedLocationApi.requestLocationUpdates(
@@ -146,24 +140,13 @@ public class MainActivity extends AppCompatActivity implements
 
         if (permissionCheck == PackageManager.PERMISSION_DENIED) {
 
-            // Should we show an explanation?
             if (ActivityCompat.shouldShowRequestPermissionRationale(
                     this, android.Manifest.permission.ACCESS_FINE_LOCATION)) {
 
-                // Show an expanation to the user *asynchronously* -- don't block
-                // this thread waiting for the user's response! After the user
-                // sees the explanation, try again to request the permission.
-
             } else {
-
-                // No explanation needed, we can request the permission.
 
                 ActivityCompat.requestPermissions(this, new String[]{
                         android.Manifest.permission.ACCESS_FINE_LOCATION}, MY_PERMISSIONS_REQUEST);
-
-                // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
-                // app-defined int constant. The callback method gets the
-                // result of the request.
             }
 
         } else {
@@ -177,20 +160,14 @@ public class MainActivity extends AppCompatActivity implements
 
         switch (requestCode) {
             case MY_PERMISSIONS_REQUEST: {
-                // If request is cancelled, the result arrays are empty.
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    // permission was granted, yay! Do the
-                    // location-related task you need to do.
+
                     requestLocationUpdate();
                 } else {
-                    // permission denied, boo! Disable the
-                    // functionality that depends on this permission.
                     txtOutput.setText("No permission to get the location");
                 }
                 return;
             }
-            // other 'case' lines to check for other
-            // permissions this app might request
         }
     }
 
@@ -208,16 +185,11 @@ public class MainActivity extends AppCompatActivity implements
     public void onLocationChanged(Location location) {
         Log.v("CURRENT LOCATION", location.toString());
         LatLng currentLoc = new LatLng(location.getLatitude(), location.getLongitude());
-        //Bundle currentAddress = location.getExtras();
-        //Log.v("CURRENT ADDRESS", currentAddress.toString());
 
-        // Add a marker to display current location of device and reposition the map
-        // First check if there is a marker already and remove it if it is there
         if (marker != null) {
             marker.remove();
         }
 
-        // If there is no marker or marker was removed, put a new marker to display current locaton
         marker = m_map.addMarker(new MarkerOptions()
                 .position(currentLoc)
                 .title("Here are you!")
@@ -242,7 +214,6 @@ public class MainActivity extends AppCompatActivity implements
         BufferedReader reader = new BufferedReader(new InputStreamReader(is));
 
         if (is!=null) {
-
             while ((str = reader.readLine()) != null) {
                 String[] coord = str.split(",");
                 coordinates.add(coord);
