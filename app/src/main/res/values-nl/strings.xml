@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="text_bottles">Water drinken is cool, het kopen van gebotteld water minder. De gevolgen van plastic flessen zijn verwoestend. Breng en fles en geniet van water van de beste kwaliteit, altijd gekoeld en verfrissend!</string>
-    <string name="text_intro">Vind het dichtbijzijnste waterpunt. Vul je fles en les je dorst.</string>
+    <string name="text_intro">Schoon en veilig tap water</string>
     <string name="text_qualtiy">Nederland en Amsterdam hebben het veiligste en schoonste kraanwater in Europa. Het smaakt heerlijk omdat er geen chloor wordt gebruikt om het schoon te maken. De kwaliteit van het Nederlandse drinkwater werd door een vergelijkend onderzoek gepubliceerd in Science Magazine (2016/02 vol. 351) als beste beoordeeld!</string>
-    <string name="header_quality">Schoon, veilig en heerlijk drink water.</string>
+    <string name="header_quality">Schoon en veilig tap water</string>
     <string name="header_info">Gratis Drink Water</string>
     <string name="header_bottles">Stop met het kopen van water in plastik flessen</string>
 </resources>

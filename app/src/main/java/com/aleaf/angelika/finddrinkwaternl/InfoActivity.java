@@ -1,4 +1,4 @@
-package com.example.angelika.finddrinkwaternl;
+package com.aleaf.angelika.finddrinkwaternl;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

@@ -1,4 +1,4 @@
-package com.example.angelika.finddrinkwaternl;
+package com.aleaf.angelika.finddrinkwaternl;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

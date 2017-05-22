@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.angelika.finddrinkwaternl">
+    package="com.aleaf.angelika.finddrinkwaternl">
 
     <uses-feature
         android:glEsVersion="0x00020000"
@@ -24,7 +24,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyD_IFRFmNT1AMwYSLI30AEv_kBiMt-eSHo" />
 
-        <activity android:name=".MainActivity">
+        <activity android:name="com.aleaf.angelika.finddrinkwaternl.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
@@ -33,7 +33,7 @@
 
 
         <activity
-            android:name=".SplashActivity"
+            android:name="com.aleaf.angelika.finddrinkwaternl.SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,11 +42,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".InfoActivity"
-            android:parentActivityName=".MainActivity">
+            android:name="com.aleaf.angelika.finddrinkwaternl.InfoActivity"
+            android:parentActivityName="com.aleaf.angelika.finddrinkwaternl.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
+                android:value="com.aleaf.angelika.finddrinkwaternl.MainActivity" />
         </activity>
     </application>
 

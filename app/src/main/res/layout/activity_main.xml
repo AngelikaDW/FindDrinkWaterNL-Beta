@@ -14,19 +14,19 @@
 
         <TextView
             android:layout_width="0dp"
-            android:layout_weight="2"
             android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="top"
             android:text="@string/text_intro"
-            android:textAppearance="@style/InfoText"
-            android:gravity="top"/>
+            android:textAppearance="@style/InfoText" />
 
         <Button
             android:id="@+id/button_info"
+            style="?android:attr/borderlessButtonStyle"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="@string/button_info"
-            style="?android:attr/borderlessButtonStyle"/>
+            android:layout_weight="1"
+            android:text="@string/button_info" />
 
     </LinearLayout>
 
@@ -36,7 +36,7 @@
         android:name="com.google.android.gms.maps.MapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.example.angelika.finddrinkwaternl.MainActivity"
+        tools:context="com.aleaf.angelika.finddrinkwaternl.MainActivity"
         tools:layout="@layout/activity_main" />
 
 </LinearLayout>
