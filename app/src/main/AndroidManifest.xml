@@ -22,7 +22,7 @@
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyD_IFRFmNT1AMwYSLI30AEv_kBiMt-eSHo" />
+            android:value="AIzaSyDEzpQMJv51RhKfhCWy_iAE_yj6ndZ0wcE" />
 
         <activity android:name="com.aleaf.angelika.finddrinkwaternl.MainActivity">
             <intent-filter>
