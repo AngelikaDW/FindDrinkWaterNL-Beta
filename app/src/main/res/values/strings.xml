@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name" translatable="false">Find Drink Water (NL)</string>
+    <string name="action_settings" translatable="false">Settings</string>
     <string name="header_info">Free Tap Water</string>
     <string name="text_intro">Find the next tap water point. Fill your bottle and quench your thirst.</string>
     <string name="button_info" translatable="false">Info</string>
@@ -12,4 +13,5 @@
     <string name="text_version" translatable="false">Version: 1.0</string>
     <string name="text_icons" translatable="false">Icons by: freepik.com</string>
     <string name="text_watertaps" translatable="false">Water fountains: Waternet, Dunea, Join the Pipe, PWN</string>
+    <string name="title_activity_main2">Main2Activity</string>
 </resources>

@@ -24,16 +24,13 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDEzpQMJv51RhKfhCWy_iAE_yj6ndZ0wcE" />
 
-        <activity android:name="com.aleaf.angelika.finddrinkwaternl.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-
-
-
         <activity
-            android:name="com.aleaf.angelika.finddrinkwaternl.SplashActivity"
+            android:name=".SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,12 +39,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.aleaf.angelika.finddrinkwaternl.InfoActivity"
-            android:parentActivityName="com.aleaf.angelika.finddrinkwaternl.MainActivity">
+            android:name=".InfoActivity"
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.aleaf.angelika.finddrinkwaternl.MainActivity" />
         </activity>
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

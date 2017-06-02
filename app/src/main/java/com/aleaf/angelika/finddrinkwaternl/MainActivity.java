@@ -8,8 +8,12 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.MenuInflater;
 import android.view.View;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -56,6 +60,7 @@ public class MainActivity extends AppCompatActivity implements
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         //shows the map
         MapFragment mapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
@@ -76,46 +81,22 @@ public class MainActivity extends AppCompatActivity implements
                     "Problems: " + e.getMessage(), Toast.LENGTH_SHORT).show();
         }
         Button info_button = (Button) findViewById(R.id.button_info);
+//        info_button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent infoIntent = new Intent(MainActivity.this, InfoActivity.class);
+//                startActivity(infoIntent);
+//            }
+//        });
         info_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent infoIntent = new Intent(MainActivity.this, InfoActivity.class);
+                Intent infoIntent = new Intent(MainActivity.this, Main2Activity.class);
                 startActivity(infoIntent);
             }
         });
 
 
-    }
-
-    @Override
-    public void onMapReady(GoogleMap map) {
-        mapReady = true;
-        m_map = map;
-        LatLng amsterdamNL = new LatLng(52.3702, 4.8952);
-        CameraPosition target = CameraPosition.builder().target(amsterdamNL).zoom(14).build();
-        m_map.moveCamera(CameraUpdateFactory.newCameraPosition(target));
-
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        //Connect the Client
-        mGoogleApiClient.connect();
-    }
-
-    @Override
-    protected void onStop() {
-        //Disconnect the Client
-        mGoogleApiClient.disconnect();
-        super.onStop();
-    }
-
-    private void configureLocationUpdates() {
-
-        mLocationRequest = LocationRequest.create();
-        mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
-        mLocationRequest.setInterval(3*60000); //Update location every 3 minutes
     }
 
     private void requestLocationUpdate() {
@@ -207,7 +188,6 @@ public class MainActivity extends AppCompatActivity implements
         m_map.animateCamera(CameraUpdateFactory.newCameraPosition(target), 2000, null);
     }
 
-
     public void LoadLocations() throws IOException {
         String str="";
         InputStream is = this.getResources().openRawResource(R.raw.where_water1);
@@ -220,6 +200,38 @@ public class MainActivity extends AppCompatActivity implements
             }
         }
         is.close();
+    }
+
+
+    @Override
+    public void onMapReady(GoogleMap map) {
+        mapReady = true;
+        m_map = map;
+        LatLng amsterdamNL = new LatLng(52.3702, 4.8952);
+        CameraPosition target = CameraPosition.builder().target(amsterdamNL).zoom(14).build();
+        m_map.moveCamera(CameraUpdateFactory.newCameraPosition(target));
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        //Connect the Client
+        mGoogleApiClient.connect();
+    }
+
+    @Override
+    protected void onStop() {
+        //Disconnect the Client
+        mGoogleApiClient.disconnect();
+        super.onStop();
+    }
+
+    private void configureLocationUpdates() {
+
+        mLocationRequest = LocationRequest.create();
+        mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+        mLocationRequest.setInterval(3 * 60000); //Update location every 3 minutes
     }
 
     public void addMarkersToMap() {
